@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/btn_default_small"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/Image_foto"
+            android:layout_width="match_parent"
+            android:layout_height="324dp"
+            android:layout_marginTop="150px"
+
+            app:srcCompat="@drawable/principal" />
+
+        <EditText
+            android:id="@+id/txtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Descripcion"
+            android:inputType="textMultiLine"
+            android:textSize="60px" />
+
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            android:background="@color/purple_200"
+            android:text="@string/Salvar"
+            android:textSize="50px" />
+
+        <Button
+            android:id="@+id/btnFotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            android:background="@color/purple_200"
+            android:text="@string/Ver_Foto"
+            android:textSize="50px" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
